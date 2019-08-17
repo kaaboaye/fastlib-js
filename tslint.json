@@ -1,0 +1,12 @@
+{
+  "extends": "ts-config",
+  "linterOptions": {
+    "exclude": [
+      "**/lib/**",
+      "**/node_modules/**"
+    ]
+  },
+  "rules": {
+    "no-non-null-assertion": false
+  }
+}
