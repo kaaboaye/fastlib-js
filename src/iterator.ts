@@ -4,8 +4,8 @@ export interface FIterator<T> extends FEnumerable<T, FIterator<T>> {
   map(callbackfn: (value: T, index: number, vector: FIterator<T>) => T): this;
 }
 
-// tslint:disable-next-line: no-any
 export function FIterator<T>(
+  // tslint:disable-next-line: no-any
   enumerable?: FEnumerable<T, any> | T[]
 ): FIterator<T> {
   const arr: T[] = (() => {
